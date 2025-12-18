@@ -625,3 +625,491 @@
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Launchify</a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#lead-capture" class="btn btn-primary" style="margin-left: 2rem; padding: 0.5rem 1.25rem;">Get Started</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#features" onclick="toggleMenu()">Features</a>
+            <a href="#benefits" onclick="toggleMenu()">Benefits</a>
+            <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+            <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+            <a href="#lead-capture" onclick="toggleMenu()">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Launch Your Product Faster</h1>
+            <p>Everything you need to grow, convert, and scale. Build trust, capture leads, and automate your workflow with our all-in-one toolkit.</p>
+            <div class="hero-btns">
+                <a href="#lead-capture" class="btn btn-primary">Get Started</a>
+                <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container text-center">
+            <p style="font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.5rem;">Trusted by 5,000+ teams worldwide</p>
+            <div class="logo-scroll">
+                <div class="brand-logo">⚡ BoltShift</div>
+                <div class="brand-logo">🔹 CoreLoop</div>
+                <div class="brand-logo">◆ Vertigo</div>
+                <div class="brand-logo">◎ OrbitInc</div>
+                <div class="brand-logo">◉ Sphere</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section-padding">
+        <div class="container">
+            <div class="text-center" style="max-width: 600px; margin: 0 auto;">
+                <h2>Powerful Features</h2>
+                <p>Designed to save you time and maximize your revenue potential.</p>
+            </div>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Setup</h3>
+                    <p>Get up and running in minutes with our one-click installation and setup wizard.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Secure Platform</h3>
+                    <p>Enterprise-grade security standards to keep your data and customer info safe.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Adapt every part of the experience to match your brand identity perfectly.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics Ready</h3>
+                    <p>Built-in dashboards to track performance, sales, and user engagement.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">📈</div>
+                    <h3>Scalable</h3>
+                    <p>Grows with you. From your first user to your millionth, we handle the load.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">💬</div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is here to help you solve problems anytime, day or night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section-padding" style="background: var(--bg-white);">
+        <div class="container benefits-wrapper">
+            <div class="benefit-content reveal-on-scroll">
+                <h2>Why Choose Launchify?</h2>
+                <p>Focus on your product while we handle the infrastructure. We provide the tools you need to succeed.</p>
+                <ul>
+                    <li>Increase conversion rates by up to 40%</li>
+                    <li>Automate repetitive marketing tasks</li>
+                    <li>Integrate with your favorite tools seamlessly</li>
+                    <li>No coding knowledge required</li>
+                </ul>
+                <a href="#lead-capture" class="btn btn-primary" style="margin-top: 1rem;">Start Growing Today</a>
+            </div>
+            <div class="benefit-visual reveal-on-scroll">
+                <div class="abstract-shape">
+                    Dashboard Preview
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2>How It Works</h2>
+                <p>Three simple steps to launch your next big idea.</p>
+            </div>
+            <div class="step-container">
+                <div class="step-item reveal-on-scroll">
+                    <div class="step-num">1</div>
+                    <h3>Sign Up</h3>
+                    <p>Create your account and select your industry template.</p>
+                </div>
+                <div class="step-item reveal-on-scroll">
+                    <div class="step-num">2</div>
+                    <h3>Customize</h3>
+                    <p>Add your content, branding, and configure your settings.</p>
+                </div>
+                <div class="step-item reveal-on-scroll">
+                    <div class="step-num">3</div>
+                    <h3>Launch</h3>
+                    <p>Publish with one click and start driving traffic immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-padding" style="background: var(--bg-white);">
+        <div class="container">
+            <div class="text-center">
+                <h2>Flexible Pricing</h2>
+                <p>Choose the plan that fits your business needs.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="price-card reveal-on-scroll">
+                    <h3>Starter</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <ul class="price-features">
+                        <li>5 Projects</li>
+                        <li>Basic Analytics</li>
+                        <li>Email Support</li>
+                        <li>Standard Templates</li>
+                    </ul>
+                    <a href="#lead-capture" class="btn btn-secondary btn-full">Choose Basic</a>
+                </div>
+                <!-- Pro -->
+                <div class="price-card featured reveal-on-scroll">
+                    <div class="badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <div class="price">$79<span>/mo</span></div>
+                    <ul class="price-features">
+                        <li>Unlimited Projects</li>
+                        <li>Advanced Analytics</li>
+                        <li>Priority Support</li>
+                        <li>Premium Templates</li>
+                        <li>A/B Testing</li>
+                    </ul>
+                    <a href="#lead-capture" class="btn btn-primary btn-full">Choose Pro</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="price-card reveal-on-scroll">
+                    <h3>Enterprise</h3>
+                    <div class="price">$199<span>/mo</span></div>
+                    <ul class="price-features">
+                        <li>Dedicated Server</li>
+                        <li>Custom Integrations</li>
+                        <li>24/7 Phone Support</li>
+                        <li>SLA Guarantee</li>
+                        <li>Onboarding Specialist</li>
+                    </ul>
+                    <a href="#lead-capture" class="btn btn-secondary btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding">
+        <div class="container text-center">
+            <h2>What Users Say</h2>
+            <div class="testimonials-container reveal-on-scroll">
+                <div class="testimonial-slider" id="slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"Launchify completely transformed how we go to market. The setup was incredibly fast and the results were immediate."</p>
+                        <div class="author">
+                            <strong>Sarah Jenkins</strong>
+                            <div class="author-role">CMO at TechFlow</div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"The best investment we made this year. The analytics features alone are worth the price of admission."</p>
+                        <div class="author">
+                            <strong>Michael Chen</strong>
+                            <div class="author-role">Founder, StartUp Inc</div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"Support is phenomenal. Can't recommend this platform enough for anyone wanting to scale quickly."</p>
+                        <div class="author">
+                            <strong>Jessica Williams</strong>
+                            <div class="author-role">Product Manager</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots" id="dots">
+                    <!-- Dots generated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture -->
+    <section id="lead-capture" class="container">
+        <div class="lead-capture reveal-on-scroll">
+            <h2>Ready to get started?</h2>
+            <p>Join thousands of happy customers today. No credit card required.</p>
+            <form class="capture-form" id="signupForm" novalidate>
+                <div class="input-group">
+                    <input type="email" id="emailInput" class="input-field" placeholder="Enter your email address" required aria-label="Email Address">
+                </div>
+                <button type="submit" class="btn btn-secondary" style="border: none; color: var(--primary);">Join Now</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+        <div class="container text-center">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there a free trial?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 14-day free trial on all plans. No credit card is required to sign up used.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I cancel anytime?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can cancel your subscription at any time from your account dashboard with no penalties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do I need coding skills?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Not at all. Launchify is designed to be user-friendly and requires zero coding knowledge to build stunning pages.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What payment methods do you accept?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards (Visa, Mastercard, Amex) and PayPal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Launchify</h3>
+                    <p style="color: #94a3b8; margin-bottom: 1rem;">Making product launches simple, fast, and effective for everyone.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" style="color: white; text-decoration: none;">Twitter</a>
+                        <a href="#" style="color: white; text-decoration: none;">LinkedIn</a>
+                        <a href="#" style="color: white; text-decoration: none;">Facebook</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Launchify. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+        }
+
+        mobileToggle.addEventListener('click', toggleMenu);
+
+        // Scroll Animations (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Only animate once
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Testimonials Slider
+        const slider = document.getElementById('slider');
+        const dotsContainer = document.getElementById('dots');
+        const slides = document.querySelectorAll('.testimonial-card');
+        let currentSlide = 0;
+
+        // Create dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        function goToSlide(index) {
+            currentSlide = index;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update dots
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        // Auto rotate
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            goToSlide(currentSlide);
+        }, 5000);
+
+        // Form Validation & Submission
+        const form = document.getElementById('signupForm');
+        const emailInput = document.getElementById('emailInput');
+        const messageBox = document.getElementById('formMessage');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!email) {
+                showMessage("Please enter your email address.", "error");
+                return;
+            }
+
+            if (!emailRegex.test(email)) {
+                showMessage("Please enter a valid email address.", "error");
+                return;
+            }
+
+            // Simulate success
+            showMessage("Thanks for joining! We'll be in touch soon.", "success");
+            form.reset();
+        });
+
+        function showMessage(text, type) {
+            messageBox.textContent = text;
+            messageBox.className = `form-message ${type}`;
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    messageBox.textContent = '';
+                    messageBox.className = 'form-message';
+                }, 5000);
+            }
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
